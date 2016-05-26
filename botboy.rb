@@ -6,10 +6,17 @@ require 'htmlentities'
 require 'securerandom'
 require 'rest_client'
 require 'rmagick'
+# Create directories
+dirs = ['cache','discards','discards/servers']
+dirs.each do |dir|
+	if Dir.exists?(dir)
+		system 'mkdir '+dir
+	end
+end
 
 token, app_id = File.read('bb-auth').lines
 
-# ad88888ba  88888888888 888888888888 888888888888 88 888b      88   ,ad8888ba,   ad88888ba 
+# ad88888ba   88888888888 888888888888 888888888888 88 888b      88   ,ad8888ba,   ad88888ba 
 # d8"     "8b 88               88           88      88 8888b     88  d8"'    `"8b d8"     "8b
 # Y8,         88               88           88      88 88 `8b    88 d8'           Y8,        
 # `Y8aaaaa,   88aaaaa          88           88      88 88  `8b   88 88            `Y8aaaaa,  
@@ -481,7 +488,6 @@ bot.command :cat do |event, *args|
 	begin
 	cat = JSON.parse RestClient.get 'http://www.random.cat/meow'
 	if cat['file'].include?(".gif")
-		bot.channel.send_message("Loading GIF File...")
 		system 'wget -O cache/cat_'+cachetoken.to_s+'.gif ' + cat['file']
 		if File.file?('cache/cat_'+cachetoken.to_s+'.gif')
 			event.channel.send_file(File.new('cache/cat_'+cachetoken.to_s+'.gif'))
@@ -494,7 +500,7 @@ bot.command :cat do |event, *args|
 		end
 	else
 		system 'wget -O cache/cat_'+cachetoken.to_s+'.png ' + cat['file']
-		if File.file?('cache/cat_'+cachetoken.to_s+'.gif')
+		if File.file?('cache/cat_'+cachetoken.to_s+'.png')
 			event.channel.send_file(File.new('cache/cat_'+cachetoken.to_s+'.png'))
 			File.delete('cache/cat_'+cachetoken.to_s+'.png')
 			nil
