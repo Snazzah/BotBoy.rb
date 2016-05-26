@@ -8,7 +8,7 @@ You can download ImageMagick from [http://www.imagemagick.org/](http://www.image
 ```
 sudo apt-get install libmagickwand-dev
 ```
-First, install all the dependencies using `bundle install`. Then edit the file "bb-auth" to this format:
+First, install all the dependencies using `bundle install`. Then make a file called 1 `bb-auth` and follow this format:
 ```
 TOKEN HERE
 171456123456123456
