@@ -1,4 +1,5 @@
-# BotBoy
+![BotBoy](https://raw.github.com/SnazzyPine25/BotBoy/master/bb-logo.png)
+============
 A big bundle of API stuff and image generators.
 
 ## How to run
@@ -25,10 +26,10 @@ You can set them all after line 28.
 Replaye with your ID in line 551 in the source code.
 
 ## Things I really need help with.
-  * Masking in dis-card commands. `Line 114-442`
+  * Masking in dis-card commands.
   * Better way to customize settings.
-  * Requesting in mcserv command. `Line 98-112`
+  * Requesting in mcserv command.
   * Fallback to commands.
   * A lighter script.
-  * A better meme command handler `Line 460-475`
-  * Unbug cat command `Line 447-513`
+  * A better meme command handler.
+  * Unbug cat command.
