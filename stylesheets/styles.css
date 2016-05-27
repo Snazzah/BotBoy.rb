@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+@import url(https://fonts.googleapis.com/css?family=VT323);
 html {
   background: #6C7989;
   background: #6c7989 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6c7989), color-stop(100%, #434b55)) fixed;
@@ -15,11 +15,13 @@ body {
   font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #555;
   font-weight: 300;
-  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAAAUdEVYdENyZWF0aW9uIFRpbWUAMy82LzEygrTcTAAAAFRJREFUSIljfPDggZRf5RIGGNjUHsNATz6jXmSL1Kb2GLiAX+USBnrymRgGGDCORgFmoNAXjEbBaBSMRsFoFIxGwWgUjEbBaBSMRsFoFIxGwWgUAABYNujumib3wAAAAABJRU5ErkJggg==') fixed;
+  background-image: url("http://i.imgur.com/n6wMbbV.png");
+  background-repeat: no-repeat;
+   background-position: center center;
 }
 
 .wrapper {
-  width: 640px;
+  width: 740px;
   margin: 0 auto;
   background: #DEDEDE;
   -webkit-border-radius: 8px;
@@ -57,32 +59,27 @@ header {
   -ms-border-radius: 8px 8px 0 0;
   -o-border-radius: 8px 8px 0 0;
   border-radius: 8px 8px 0 0;
-  background: #C6EAFA;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ddfbfc), color-stop(100%, #c6eafa));
-  background: -webkit-linear-gradient(#ddfbfc, #c6eafa);
-  background: -moz-linear-gradient(#ddfbfc, #c6eafa);
-  background: -o-linear-gradient(#ddfbfc, #c6eafa);
-  background: -ms-linear-gradient(#ddfbfc, #c6eafa);
-  background: linear-gradient(#ddfbfc, #c6eafa);
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAFCAYAAACEhIafAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AUbDC4kq3b6VQAAABhJREFUCNdjaPl/4D/To4fXGZgYGBiQCAB4EAXlZFZEDQAAAABJRU5ErkJggg==');
   position: relative;
   padding: 15px 20px;
-  border-bottom: 1px solid #B2D2E1;
 }
 header h1 {
   margin: 0;
   padding: 0;
   font-size: 24px;
   line-height: 1.2;
-  color: #069;
-  text-shadow: rgba(255, 255, 255, 0.9) 0 1px 0;
+  color: #fff;
+  text-shadow: rgba(0, 0, 0, 0.9) 0 2px 0;
 }
 header.without-description h1 {
   margin: 10px 0;
 }
 header p {
+  font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
   margin: 0;
-  color: #61778B;
+  color: #fff;
   width: 300px;
+  text-shadow: rgba(0, 0, 0, 0.9) 0 1px 0;
   font-size: 13px;
 }
 header p.view {
@@ -92,7 +89,7 @@ header p.view {
   -webkit-font-smoothing: antialiased;
 }
 header p.view a {
-  color: #06c;
+  color: #000;
 }
 header p.view small {
   font-weight: 400;
@@ -107,13 +104,7 @@ header ul {
   top: 20px;
   height: 38px;
   padding: 1px 0;
-  background: #5198DF;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #77b9fb), color-stop(100%, #3782cd));
-  background: -webkit-linear-gradient(#77b9fb, #3782cd);
-  background: -moz-linear-gradient(#77b9fb, #3782cd);
-  background: -o-linear-gradient(#77b9fb, #3782cd);
-  background: -ms-linear-gradient(#77b9fb, #3782cd);
-  background: linear-gradient(#77b9fb, #3782cd);
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAFCAYAAACEhIafAAAABmJLR0QAOgB8AL5j4BTnAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AUbDDgAi+2rUwAAABlJREFUCNdjKCgo+M8gJyf3n4mBgYEBQQAASbQDr5oIxf0AAAAASUVORK5CYII=');
   border-radius: 5px;
   -webkit-box-shadow: inset rgba(255, 255, 255, 0.45) 0 1px 0, inset rgba(0, 0, 0, 0.2) 0 -1px 0;
   -moz-box-shadow: inset rgba(255, 255, 255, 0.45) 0 1px 0, inset rgba(0, 0, 0, 0.2) 0 -1px 0;
@@ -141,7 +132,7 @@ header ul:before {
 header ul li {
   width: 79px;
   float: left;
-  border-right: 1px solid #3A7CBE;
+  border-right: 1px solid url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAFCAYAAACEhIafAAAABmJLR0QAOgB8AL5j4BTnAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AUbDDchQBynwgAAABlJREFUCNdjiIuL+8/AwMDwn4mBgYEBQQAAPoYDH0fS+RgAAAAASUVORK5CYII=');
   height: 38px;
 }
 header ul li.single {
@@ -149,7 +140,7 @@ header ul li.single {
 }
 header ul li + li {
   width: 78px;
-  border-left: 1px solid #8BBEF3;
+  border-left: 1px solid url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAFCAYAAACEhIafAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AUbDDMutM9/VwAAABhJREFUCNdjOHjw4H+me/fuMTAxMDAgEQB4QQXlDYV2rgAAAABJRU5ErkJggg==');
 }
 header ul li + li + li {
   border-right: none;
@@ -177,13 +168,12 @@ header ul a strong {
 section {
   padding: 15px 20px;
   font-size: 15px;
-  border-top: 1px solid #fff;
-  background: -webkit-gradient(linear, 50% 0%, 50% 700, color-stop(0%, #fafafa), color-stop(100%, #dedede));
-  background: -webkit-linear-gradient(#fafafa, #dedede 700px);
-  background: -moz-linear-gradient(#fafafa, #dedede 700px);
-  background: -o-linear-gradient(#fafafa, #dedede 700px);
-  background: -ms-linear-gradient(#fafafa, #dedede 700px);
-  background: linear-gradient(#fafafa, #dedede 700px);
+  background: -webkit-gradient(linear, 50% 0%, 50% 700, color-stop(0%, #050505), color-stop(100%, #212121));
+  background: -webkit-linear-gradient(#050505, #212121 800px);
+  background: -moz-linear-gradient(#050505, #212121 800px);
+  background: -o-linear-gradient(#050505, #212121 800px);
+  background: -ms-linear-gradient(#050505, #212121 800px);
+  background: linear-gradient(#050505, #212121 800px);
   -webkit-border-radius: 0 0 8px 8px;
   -moz-border-radius: 0 0 8px 8px;
   -ms-border-radius: 0 0 8px 8px;
@@ -193,7 +183,8 @@ section {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #222;
+  font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+  color: #fff;
   padding: 0;
   margin: 0 0 20px;
   line-height: 1.2;
