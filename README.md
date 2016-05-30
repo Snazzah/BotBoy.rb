@@ -1,4 +1,5 @@
 ![BotBoy](https://raw.github.com/SnazzyPine25/BotBoy/master/bb-logo.png)
+[![discord](https://img.shields.io/badge/discord-join-7289DA.svg)](https://discord.gg/0vjTDaDsgOQWUtlv)
 ============
 A big bundle of API stuff and image generators.
 
@@ -30,6 +31,5 @@ Replaye with your ID in line 551 in the source code.
   * Better way to customize settings.
   * Requesting in mcserv command.
   * Fallback to commands.
-  * A lighter script.
   * A better meme command handler.
   * Unbug cat command.
