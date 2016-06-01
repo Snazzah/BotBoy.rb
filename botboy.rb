@@ -1048,6 +1048,7 @@ bot.command :help do |event|
   event << "I sent you a list, #{event.user.mention} !"
   event.user.pm("Prefixes: `^` and `@mention`
   __**Available Commands**__
+**ping** *~ AKA pong*
 **invite** (invite link) *~ Invites bot to server with invite.*
 **lmgtfy** *~ Makes a LMGTFY link.*
 **osusig (osu username)** *~ Makes a Signature for a Osu! player.*
