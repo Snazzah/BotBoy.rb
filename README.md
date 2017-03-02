@@ -1,5 +1,5 @@
 ![BotBoy](https://raw.github.com/SnazzyPine25/BotBoy/master/bb-logo.png)
-[![discord](https://img.shields.io/badge/discord-join-7289DA.svg)](https://discord.gg/0vjTDaDsgOQWUtlv)
+[![discord](https://img.shields.io/badge/discord-join-7289DA.svg)](https://discord.gg/bc4CHJw)
 ============
 A big bundle of API stuff and image generators.
 
